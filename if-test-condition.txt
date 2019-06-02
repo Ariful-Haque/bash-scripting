@@ -1,0 +1,29 @@
+
+# Normally, 'if' statement can only evaluate 'Shell Commands' and
+# if the command returns zero exit status code, then 'if' block is run.
+# otherwise else block.
+
+if ls -d /home/user; then
+ echo ......
+else
+ echo .......
+
+# But using test command or test condition [] it can evaluate any condition
+# just like other programing languages. If the condition is true, the test condition
+# exit with a zero exit status code.
+
+
+## Test condition can evaluate three classes of condition
+
+ - Numeric Comparision
+ - String Comparision
+ - File Comparision
+
+var=4
+if [$var1 -gt 2]; then
+  echo ......
+else
+  echo ......
+
+# you can not use floating-point for test condition, only integer.
+
