@@ -7,7 +7,7 @@
 -s file # if file exists and is not empty
 -w file # if file exists and is writable
 -x file # if file exists and is executable
--0 file # if file exists and owned by the current user.
+-O (upperCase O) file # if file exists and owned by the current user.
 -G file # if file exists and deafult group is the same as the current user.
 file1 -nt file2 # if file1 is newer than file2
 file1 -ot file2 # if file1 is older than file2
